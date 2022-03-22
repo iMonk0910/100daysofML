@@ -12,5 +12,8 @@
 ## (3/100days)
 	Data_Analysis_Using_Pandas(continuation of Day2 work).
 	
+## (4/100days)
+	Data_Analysis_Using_Numpy
+	
 
 	
