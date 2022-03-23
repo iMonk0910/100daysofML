@@ -15,7 +15,7 @@
 ## (4/100days)
 	Data_Analysis_Using_Numpy.
 	
-## (5/100)
+## (5/100days)
 	Data_Analysis_Using_Numpy(continuation of Day4 work).
 	
 
