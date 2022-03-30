@@ -7,7 +7,7 @@
 	
 	
 ## (2/100days)
-	Data_Analysis_Using_Pandas.[Link](https://github.com/Dixit01/100daysofML/blob/main/(2nd%20%26%203rd%20day%20of%20%20%20ML%20%26%20previous%20work)%20Data_Analysis_Using_Pandas.ipynb)
+	Data_Analysis_Using_Pandas.[Link]https://github.com/Dixit01/100daysofML/blob/main/(2nd%20%26%203rd%20day%20of%20%20%20ML%20%26%20previous%20work)%20Data_Analysis_Using_Pandas.ipynb
 	
 ## (3/100days)
 	Data_Analysis_Using_Pandas(continuation of Day2 work).
