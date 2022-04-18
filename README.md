@@ -17,7 +17,16 @@
 	
 ## (5/100days)
 	Data_Analysis_Using_Numpy(continuation of Day4 work).
-	
-	
 
+## (6/100days)	
+	Practiced SciPy library using Jupyter.
 	
+## (7/100days)
+	Read about Data preprocessing - Missing value Handling, Data Encoding,Splitting and Scaling.
+	Also Read about linear and logistic regression techniques.
+
+## (8 & 9 /100days)
+	Learnt statistics from YouTube playlist uploaded by Khan Academy.
+
+## (10 & 11/100days)
+	Learnt Linear Algebra from YouTube playlist uploaded by Imperial College
