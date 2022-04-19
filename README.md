@@ -29,4 +29,12 @@
 	Learnt statistics from YouTube playlist uploaded by Khan Academy.
 
 ## (10 & 11/100days)
-	Learnt Linear Algebra from YouTube playlist uploaded by Imperial College
+	Learnt Linear Algebra from YouTube playlist uploaded by DLH branch of Imperial College
+
+## (12 & 13/100days)
+	 Learnt Calculus from  'Mathmatics for Machine learning: Multivariate Calculus' playlist available on 
+	 YouTube uploaded by DLH branch of Imperial College
+	 
+## (14/100days)
+	Completed a project on web scrapping using beautifulsoup. Also learnt web scrapping using Selenium.
+	
