@@ -60,7 +60,16 @@
 
 ## (24/100days)
 	Learnt about activation functions.(Theory)
-	Also completed a linear regression model.............
+	Also learnt and built a linear regression model.............
 
 ## (25/100days)
+	Learnt and  a logistic regression model.......
+	
+## (26/100days)
+	Learning thoroughly about Advancedd optimization from youtube video playlist......
+	
+## (27/100days)
+	learnt and built models on Decision Trees and Random Forests.
+	Also learnt overfiiting and Hyperparameter Tuning and applied on Decision Trees and Random Forests models.
 
+## (28/100days)
