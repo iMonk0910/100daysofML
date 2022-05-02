@@ -5,7 +5,6 @@
 ## (1/100days) 
 	Data Visualisation with Python(Matplotlib,seaborn,plotly).
 	
-	
 ## (2/100days)
 	Data_Analysis_Using_Pandas.
 	
@@ -32,19 +31,17 @@
 	Learnt Linear Algebra from YouTube playlist uploaded by DLH branch of Imperial College
 
 ## (12 & 13/100days)
-	 Learnt Calculus from  'Mathmatics for Machine learning: Multivariate Calculus' playlist available on 
-	 YouTube uploaded by DLH branch of Imperial College
+	Learnt Calculus from  'Mathmatics for Machine learning: Multivariate Calculus' playlist available on 
+	YouTube uploaded by DLH branch of Imperial College
 	 
 ## (14/100days)
 	Completed a project on web scrapping using beautifulsoup. Also learnt web scrapping using Selenium.
 	
 ## (15 & 16 /100days)
-	 Learnt basics of Database and practiced SQL Queries.
+	Learnt basics of Database and practiced SQL Queries.
 
 ## (17 & 18/100days)
-	
 	Learnt Data Analysis using PowerBI from Youtube content uploaded by Intellipaat
-
 
 ## (19 & 20 /100days)
 	Learnt Data Analysis using PowerBI from Youtube content uploaded by Intellipaat
@@ -69,7 +66,33 @@
 	Learning thoroughly about Advancedd optimization from youtube video playlist......
 	
 ## (27/100days)
-	learnt and built models on Decision Trees and Random Forests.
+	Learnt and built models on Decision Trees and Random Forests.
 	Also learnt overfiiting and Hyperparameter Tuning and applied on Decision Trees and Random Forests models.
 
 ## (28/100days)
+	Learnt and built models on naive Bayes classification algorithm(Gaussian, Multinomial, Bernoulli) and 
+	SVM (with different kernel function linear, nonlinear, polynomial, RBF, and sigmoid)
+
+## (29/100days)
+	Learnt lasso and ridge regression. Read thoroughly about L1, L2 regularisation and gradient 
+	descent(BGD, SGD, Mini-BGD). Also learnt and built a model on KNN algorithm.
+
+## (30/100days)
+	(2nd day)Learning thoroughly about Advancedd optimization from youtube video playlist......
+
+## (31/100days)
+	Read concepts of unsupervised learning(clustering, types of Clustering, Association).
+	Also read and built models on DBSCAN algorithm.
+
+## (32/100days)
+	Read and built models on K-means and KNN (k-nearest neighbours) algorithms for unsupervised learning.
+
+## (33/100days)
+	Learnt about Hierarchical cluster analysis and silhouette clustering. Also Read about dimensional reduction.
+
+## (34/100days)
+	Read about these four types of Boosting algorithms - GBM, XGBM, XGBoost, CatBoost
+
+## (35/100days)
+
+
