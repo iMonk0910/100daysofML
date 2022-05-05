@@ -103,5 +103,6 @@
 	Learnt PCA (Principal component Analysis) and implemented a model using PCA algorithm.
 
 ## (38/100days)
-
-
+	Learnt about Basics of NLP. Tokenisation, normalisation, Stemming, lemmatisation, Corpus, Stop Words, 
+	POS tagging, Vecterisation BOG, TF, TF IDF
+	
