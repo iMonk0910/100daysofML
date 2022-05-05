@@ -94,5 +94,14 @@
 	Read about these four types of Boosting algorithms - GBM, XGBM, XGBoost, CatBoost
 
 ## (35/100days)
+	Read theory of Neural Networks.
+	
+## (36/100days)
+	Read thoroughly about Perceptron. Also Implemented Perceptron for Iris dataset.
+
+## (37/100days)
+	Learnt PCA (Principal component Analysis) and implemented a model using PCA algorithm.
+
+## (38/100days)
 
 
