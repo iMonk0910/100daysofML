@@ -106,3 +106,8 @@
 	Learnt about Basics of NLP. Tokenisation, normalisation, Stemming, lemmatisation, Corpus, Stop Words, 
 	POS tagging, Vecterisation BOG, TF, TF IDF
 	
+## (39/100days)
+	Feature descriptors - Image feature, shape feature, statistical moments, 
+		moments features, image feature, region feature, co-occurance matrix, 
+	Discriminant function, Multivariate normal distribution
+	
