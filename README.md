@@ -111,3 +111,41 @@
 		moments features, image feature, region feature, co-occurance matrix, 
 	Discriminant function, Multivariate normal distribution
 	
+## (40/100days)
+	Read About CNN(Convolutional Neural Network)
+
+
+## (41/100days)
+	Created CNN model over Image Dataset(Using Data Augmentation) with tensorfllow (keras) 
+
+## (42/100days)
+	Read more about CNN
+
+## (43/100days)
+	started a online course 'Intro to TensorFlow for Deep Learning' from Udacity  
+
+
+## (44/100days)
+	Further learning of online course 'Intro to TensorFlow for Deep Learning'
+
+
+## (45/100days)
+	Completed 'Intro to TensorFlow for Deep Learning'
+
+
+## (46/100days)
+	Watched a youtube series 'Machine Learning Foundation' from GoogleDevs
+
+
+## (47/100days)
+	Started Learning Course 'TensorFlow Developer certification in 2022: Zero to Mastery' available on Udemy.  
+
+
+## (48/100days)
+	Completed section 2 of 'TensorFlow Developer certification in 2022: Zero to Mastery'
+
+
+## (49/100days)
+
+
+## (50/100days)
