@@ -140,11 +140,11 @@
 ## (47-67/100days)
 	Completed Courses:
 	1. TensorFlow Developer Certificate in 2022: Z2M (udemy) 
-	(Milestone project 1: Food Vision)
-	(Milestone project 2: Skimlit)
-	(Milestone Project 3: BitPredict)
+		(Milestone project 1: Food Vision)
+		(Milestone project 2: Skimlit)
+		(Milestone Project 3: BitPredict)
 	
-	2. Machine Learning: Stenford University (Andrew Ng) 
+	2. Machine Learning: Stenford University (Andrew Ng(Coursera)) 
 
 
 
