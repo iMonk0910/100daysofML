@@ -137,15 +137,18 @@
 	Watched a youtube series 'Machine Learning Foundation' from GoogleDevs
 
 
-## (47/100days)
-	Started Learning Course 'TensorFlow Developer certification in 2022: Zero to Mastery' available on Udemy.  
+## (47-67/100days)
+	Completed Courses:
+	1. TensorFlow Developer Certificate in 2022: Z2M (udemy) 
+	(Milestone project 1: Food Vision)
+	(Milestone project 2: Skimlit)
+	(Milestone Project 3: BitPredict)
+	
+	2. Machine Learning: Stenford University (Andrew Ng) 
 
 
-## (48/100days)
-	Completed section 2 of 'TensorFlow Developer certification in 2022: Zero to Mastery'
+
+## (68/100days)
 
 
-## (49/100days)
 
-
-## (50/100days)
