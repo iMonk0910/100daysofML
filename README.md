@@ -148,7 +148,14 @@
 
 
 
-## (68/100days)
+## (68-72/100days)
+	Learn basic of openCV library and completed these projects:
+		1. Moving Object detection and Tracking
+		2. Object Tracking based on color
+		3. Face Detection, Tracking, Recognition and Emotion Recognition
+		
+## (73-77th/100days)
+	
 
 
 
