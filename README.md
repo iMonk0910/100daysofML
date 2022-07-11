@@ -155,6 +155,10 @@
 		3. Face Detection, Tracking, Recognition and Emotion Recognition
 		
 ## (73-77th/100days)
+	Completed three end to end mini projects
+		1. Book recommendor (collaborative filtering)
+		2. Movie recommendor (content based)
+		3. Duplicate Qoura question pair
 	
 
 
