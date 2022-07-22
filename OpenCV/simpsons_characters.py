@@ -11,7 +11,7 @@ from tensorflow.keras.callbacks import LearningRateScheduler
 
 IMG_SIZE = (80,80)
 channels = 1
-char_path = r'/kaggle/input/the-simpsons-characters-dataset/simpsons_dataset'
+char_path = r'../input/the-simpsons-characters-dataset/simpsons_dataset'
 
 # Creating a character dictionary, sorting it in descending order
 char_dict = {}
