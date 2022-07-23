@@ -92,7 +92,7 @@ print(characters)
 
 """## Testing"""
 
-test_path = r'../input/the-simpsons-characters-dataset/kaggle_simpson_testset/kaggle_simpson_testset/charles_montgomery_burns_0.jpg'
+test_path = r'../input/the-simpsons-characters-dataset/kaggle_simpson_testset/charles_montgomery_burns_0.jpg'
 
 img = cv.imread(test_path)
 
