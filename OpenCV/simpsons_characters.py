@@ -5,9 +5,14 @@ import canaro
 import numpy as np
 import cv2 as cv
 import gc
+
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Flatten, Dropout, Conv2D, MaxPooling2D
+from tensorflow.keras.optimizers import SGD
 import matplotlib.pyplot as plt
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.callbacks import LearningRateScheduler
+
 
 IMG_SIZE = (80,80)
 channels = 1
@@ -63,29 +68,82 @@ del labels
 gc.collect()
 
 # Useful variables when training
-BATCH_SIZE = 32
-EPOCHS = 10
 
+IMG_SIZE = (80,80)
+LEARNING_RATE = 0.001
+DECAY = 1e-6
+MOMENTUM = .9
+EPOCHS = 50
+BATCH_SIZE = 32
+
+output_dim=len(characters)
+
+w, h = IMG_SIZE[:2]
+
+# Create our model (returns the compiled model)
 # Image data generator (introduces randomness in network ==> better accuracy)
 datagen = canaro.generators.imageDataGenerator()
 train_gen = datagen.flow(x_train, y_train, batch_size=BATCH_SIZE)
 
-# Create our model (returns the compiled model)
-model = canaro.models.createSimpsonsModel(IMG_SIZE=IMG_SIZE, channels=channels, output_dim=len(characters), 
-                                         loss='binary_crossentropy', decay=1e-7, learning_rate=0.001, momentum=0.9,
-                                         nesterov=True)
+model = Sequential()
+model.add(Conv2D(32, (3, 3), activation='relu', padding='same', input_shape=(w, h, channels)))
+model.add(Conv2D(32, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.2))
 
-model.summary()
+model.add(Conv2D(64, (3, 3), padding='same', activation='relu'))
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.2))
+
+
+model.add(Conv2D(256, (3, 3), padding='same', activation='relu')) 
+model.add(Conv2D(256, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.2))
+
+model.add(Flatten())
+model.add(Dropout(0.5))
+model.add(Dense(1024, activation='relu'))
+
+model = Sequential()
+model.add(Conv2D(32, (3, 3), activation='relu', padding='same', input_shape=(w, h,channels)))
+model.add(Conv2D(32, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.2))
+
+model.add(Conv2D(64, (3, 3), padding='same', activation='relu'))
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.2))
+
+model.add(Conv2D(256, (3, 3), padding='same', activation='relu')) 
+model.add(Conv2D(256, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.2))
+
+model.add(Flatten())
+model.add(Dropout(0.5))
+model.add(Dense(1024, activation='relu'))
+
+# Output Layer
+model.add(Dense(output_dim, activation='softmax'))
+
+optimizer = SGD(learning_rate=0.001, decay=DECAY, momentum=MOMENTUM)
+
+model.compile(loss='CategoricalCrossentropy', optimizer=optimizer, metrics=['accuracy'])
 
 # Training the model
 
-callbacks_list = [LearningRateScheduler(canaro.lr_schedule)]
+#callbacks_list = [LearningRateScheduler(canaro.lr_schedule)]
 training = model.fit(train_gen,
                     steps_per_epoch=len(x_train)//BATCH_SIZE,
                     epochs=EPOCHS,
                     validation_data=(x_val,y_val),
-                    validation_steps=len(y_val)//BATCH_SIZE,
-                    callbacks = callbacks_list)
+                    validation_steps=len(y_val)//BATCH_SIZE)
+#callbacks = callbacks_list
+
+model.summary()
 
 print(characters)
 
