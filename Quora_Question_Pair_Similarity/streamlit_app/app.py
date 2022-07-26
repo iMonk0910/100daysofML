@@ -1,5 +1,5 @@
 import streamlit as st
-import helper
+import helper_file
 import pickle
 
 model = pickle.load(open('model.pkl','rb'))
