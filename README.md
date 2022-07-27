@@ -161,5 +161,10 @@
 		3. Duplicate Qoura question pair
 	
 
-
-
+## (78-79th/100days)
+	Learn OpenCV library library and performed 
+		1. Basic to Advanced OpenCV operations.
+		2. Face Detection
+		3. Simpsons Characters Detection
+		
+		
