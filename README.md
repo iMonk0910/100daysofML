@@ -161,10 +161,14 @@
 		3. Duplicate Qoura question pair
 	
 
-## (78-79th/100days)
+## (78-80th/100days)
 	Learn OpenCV library library and performed 
 		1. Basic to Advanced OpenCV operations.
 		2. Face Detection
 		3. Simpsons Characters Detection
 		
-		
+## (81- 86th/100days)	
+	Completed three end to end mini projects
+		1. A Corona virus(Covid-19) Dashboard Session on Dash
+		2. Email Spam Classifier_SMS Spam Classifier (End to End Project (Heroku Deployment))
+		3. Face Mask Detection using (VGG16 Keras)
