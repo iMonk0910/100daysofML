@@ -27,8 +27,8 @@ while True:
         if cv2.contourArea(c) < area:
             continue
         (x, y, w, h) = cv2.boundingRect(c)
-        cv2.rectangle(Img, (x, y), (x+w, y+h), (0, 255, 0),
-                     text="Moving object detected")
+        cv2.rectangle(Img, (x, y), (x+w, y+h), (0, 255, 0))    
+    text="Moving object detected"
     cv2.putText(Img, text, (10,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5,(0, 0, 255), 2)
     cv2.imshow("VideoStream", Img)  #showing the frame image
     key = cv2.waitKey(1) & 0xFF
