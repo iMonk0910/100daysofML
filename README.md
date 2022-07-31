@@ -162,10 +162,9 @@
 	
 
 ## (78-80th/100days)
-	Learn OpenCV library library and performed 
-		1. Basic to Advanced OpenCV operations.
-		2. Face Detection
-		3. Simpsons Characters Detection
+	Learnt OpenCV library and performed 
+		1. Basic to Advanced OpenCV operations
+		2. Simpsons Characters Detection
 		
 ## (81- 86th/100days)	
 	Completed three end to end mini projects
