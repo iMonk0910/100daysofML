@@ -1,6 +1,6 @@
 # 100daysofML
 
-### 100 days of Machine Learning with a goal to learn machine learning. I have started this journey with some basic knowledge of ML.  
+### `100 days of Machine Learning` with a goal to learn machine learning. I have started this journey with some basic knowledge of ML.  
 
 ## (1/100days) 
 	Data Visualisation with Python(Matplotlib,seaborn,plotly).
