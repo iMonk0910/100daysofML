@@ -1,7 +1,7 @@
 import cv2, os #OpenCV library
 haar_file = "haarcascade_frontalface_default.xml" #accessed the model file
 datasets = "datasets"
-sub_data = "rr1"
+sub_data = "rr1" #face_name
 
 
 path = os.path.join(datasets, sub_data)
