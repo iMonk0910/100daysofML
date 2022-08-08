@@ -1,4 +1,4 @@
-#Import the neccesary libraries
+#Import libraries
 import numpy as np
 import argparse
 import imutils
@@ -19,24 +19,14 @@ ClassNames = { 0: 'background',
 
 Threshold_confi = 0.2
 colours = np.random.uniform(0, 255, size = (len(ClassNames), 3))
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0) #open the camera
 time.sleep(5)
 
 #Load the Caffe model
 MBnet = cv2.dnn.readNetFromCaffe(prototxt, model)
 
-
-
-
-# Next, open the video file or capture device depending what we choose, also load the model Caffe model.
-# Open video file or capture device.
-
-
-
-
 while True:
-    # Capture frame-by-frame
-    ret, frame = cap.read()
+    ret, frame = cap.read() # Capture frame-by-frame
     frame_resized = imutils.resize(frame, width = 300)
     # Size of frame resize (300x300)
     cols = frame_resized.shape[1]
@@ -54,19 +44,14 @@ while True:
 
     blob = cv2.dnn.blobFromImage(frame_resized, 0.007843, (300, 300), (127.5, 127.5, 127.5))
 
-    #Set to network the input blob
-    MBnet.setInput(blob)
+    
+    MBnet.setInput(blob) #Set the blobed image input to model 
 
 
-    #Prediction of network
-    detections = MBnet.forward()
-
-
-
-
-    #For get the class and location of object detected,
-    # There is a fix index for class, location and confidence
-    # value in @detections array .
+    
+    detections = MBnet.forward() #Prediction
+    
+    .
     for i in range(detections.shape[2]):
         confidence = detections[0, 0, i, 2] #Confidence of prediction
         if confidence > Threshold_confi : # Filter prediction
@@ -87,11 +72,9 @@ while True:
             yLeftBottom = int(heightFactor * yLeftBottom)
             xRightTop   = int(widthFactor * xRightTop)
             yRightTop   = int(heightFactor * yRightTop)
-            # Draw location of object
-            cv2.rectangle(frame, (xLeftBottom, yLeftBottom), (xRightTop, yRightTop),
-                          (0, 255, 0))
-
-            # Draw label and confidence of prediction in frame resized
+            
+            cv2.rectangle(frame, (xLeftBottom, yLeftBottom), (xRightTop, yRightTop), (0, 255, 0)) # location of object
+           
             if class_id in ClassNames:
                 label = ClassNames[class_id] + ": " + str(confidence)
                 labelSize, baseLine = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
@@ -108,5 +91,5 @@ while True:
 
     cv2.namedWindow("frame", cv2.WINDOW_NORMAL)
     cv2.imshow("frame", frame)
-    if cv2.waitKey(1) >= 0:  # Break with ESC      
+    if cv2.waitKey(1) >= 0:       
         break
