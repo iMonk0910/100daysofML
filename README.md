@@ -168,6 +168,6 @@
 		
 ## (81- 86th/100days)	
 	Completed three end to end mini projects
-		1. A Corona virus(Covid-19) Dashboard Session on Dash
-		2. Email Spam Classifier_SMS Spam Classifier (End to End Project (Heroku Deployment))
+		1. Object Recognition (mobileNet-SSD)
+		2. Email and SMS Spam Classifier (End to End Project (Heroku Deployment))
 		3. Face Mask Detection using (VGG16 Keras)
