@@ -16,10 +16,10 @@ def pre_process(text):
             string_list.append(i)
     
     
-    string_list = word for word in string_list if not word in stopwords.words('english')] #remove stopwords
+    string_list = [word for word in string_list if not word in stopwords.words('english')] #remove stopwords
 
     
-    string_list = word for word in string_list if not word in string.punctuation:   #remove punctuation
+    string_list = [word for word in string_list if not word in string.punctuation]   #remove punctuation
 
     #stemming
     ps = PorterStemmer()
