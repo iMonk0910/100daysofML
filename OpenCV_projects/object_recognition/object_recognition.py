@@ -1,10 +1,10 @@
 #Import libraries
 import numpy as np
-import argparse
 import imutils
 import cv2
 import time
 
+#model
 prototxt = "MobilenetSSD_deploy.prototext.txt"
 model = "MobileNetSSD_deploy.caffemodel"
 
@@ -17,7 +17,7 @@ ClassNames = { 0: 'background',
     14: 'motorbike', 15: 'person', 16: 'pottedplant',
     17: 'sheep', 18: 'sofa', 19: 'train', 20: 'tvmonitor' }
 
-Threshold_confi = 0.2
+Threshold_confi = 0.5
 colours = np.random.uniform(0, 255, size = (len(ClassNames), 3))
 cap = cv2.VideoCapture(0) #open the camera
 time.sleep(5)
@@ -27,41 +27,34 @@ MBnet = cv2.dnn.readNetFromCaffe(prototxt, model)
 
 while True:
     ret, frame = cap.read() # Capture frame-by-frame
-    frame_resized = imutils.resize(frame, width = 300)
+    
+    # MobileNet requires fixed dimensions for input image(s)
+    frame_resized = imutils.resize(frame, width = 300) #resized to 300x300 pixels.
     # Size of frame resize (300x300)
     cols = frame_resized.shape[1]
     rows = frame_resized.shape[0]
 
-    #frame_resized = cv2.resize(frame,(300,300)) # resize frame
-
-    # MobileNet requires fixed dimensions for input image(s)
-    # so we have to ensure that it is resized to 300x300 pixels.
-    # set a scale factor to image because network the objects has differents size.
-    # We perform a mean subtraction (127.5, 127.5, 127.5) to normalize the input;
-    # after executing this command our "blob" now has the shape:
-    # (1, 3, 300, 300)
 
 
-    blob = cv2.dnn.blobFromImage(frame_resized, 0.007843, (300, 300), (127.5, 127.5, 127.5))
+    blob = cv2.dnn.blobFromImage(frame_resized, 0.007843, (300, 300), (127.5, 127.5, 127.5)) # blobed image (set a scale factor to image, perform a mean subtraction (127.5, 127.5, 127.5) to normalize the input)
 
+    # blobed image  now has the shape: 1, 3, 300, 300)
     
     MBnet.setInput(blob) #Set the blobed image input to model 
-
-
     
     detections = MBnet.forward() #Prediction
     
-    .
+    
     for i in range(detections.shape[2]):
         confidence = detections[0, 0, i, 2] #Confidence of prediction
         if confidence > Threshold_confi : # Filter prediction
             class_id = int(detections[0, 0, i, 1]) # Class label
 
             # Object location
-            xLeftBottom = int(detections[0, 0, i, 3] * cols)
-            yLeftBottom = int(detections[0, 0, i, 4] * rows)
-            xRightTop   = int(detections[0, 0, i, 5] * cols)
-            yRightTop   = int(detections[0, 0, i, 6] * rows)
+            xLeftBottom X = int(detections[0, 0, i, 3] * cols)
+            yLeftBottom Y = int(detections[0, 0, i, 4] * rows)
+            xRightTop   W = int(detections[0, 0, i, 5] * cols)
+            yRightTop   H = int(detections[0, 0, i, 6] * rows)
 
 
 # Factor for scale to original size of frame
@@ -91,5 +84,5 @@ while True:
 
     cv2.namedWindow("frame", cv2.WINDOW_NORMAL)
     cv2.imshow("frame", frame)
-    if cv2.waitKey(1) >= 0:       
+    if cv2.waitKey(1) >= 0: #Break       
         break
