@@ -171,11 +171,14 @@
 		1. Object Recognition (mobileNet-SSD)
 		2. Email and SMS Spam Classifier (streamlit App))
 		3. Face Mask Detection using (VGG16 Keras)
-		
-## (87-90th/100days),
+
+## (87-88th/100days)
+	Learnt concepts of RNN, LSTM, Bi-Directonal LSTM, GRU, Encoder and Decoder 
+
+## (89-91th/100days)
 	Learnt Autoencoders (Undercomplete & Regularized Autoencoders(Sparse, Denoising))
 
 		1. Autoencoder for dimensionality reduction
 		2. Autoencoder on Image Data
 		3. Autoencoder on dataset of average eating habits between countries in the UK
-	
+
