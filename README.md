@@ -181,4 +181,13 @@
 		1. Autoencoder for dimensionality reduction
 		2. Autoencoder on Image Data
 		3. Autoencoder on dataset of average eating habits between countries in the UK
+		
+## (92-96th/100days)
+
+	1. Built an  series of Disease detection models and deployed the best model over heroku.
+	2. Learnt about Generative Adversarial Networks (GANs).
+	
+	3. Read about language understanding models: BERT, RoBERTa, XLNet 
+
+
 
